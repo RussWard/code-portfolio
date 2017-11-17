@@ -4,27 +4,27 @@ import styled from 'styled-components'
 export const Name = styled.div`
   float: left;
   margin: 10px 0 0 5px;
+  font-size: 120%;
   text-decoration: underline;
 `
 
 export const Nav = styled.span`
   float: right;
   margin-right: 5px;
-  margin-top: 10px;
+  margin-top: 5px;
 `
 
 export const NavLink = styled.a`
-  display: inline;
+  display: inline-block;
   color: inherit;
   margin-right: 5px;
-  margin-top: 10px;
   text-decoration: none;
-  &:hover
+  &:hover,
   &:active {
     text-decoration: underline;
     cursor: pointer;
   }
-  &:visited
+  &:visited,
   &:link {
     color: #555;
     text-decoration: none;
