@@ -1,6 +1,9 @@
 {
   "name": "gatsby-starter-hello-world",
   "version": "1.0.0",
+  "engines": {
+    "node": "6.11.2"
+    },
   "description": "Gatsby hello world starter",
   "license": "MIT",
   "scripts": {
