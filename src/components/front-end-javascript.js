@@ -4,6 +4,32 @@ import Gist from './gist'
 import { LinkItem } from './linkItem-styles'
 import { Row, Col_2, Col_3, Col_4, Col_gold } from './grid-styles'
 
+const modalStyles = {
+  overlay: {
+    position          : 'fixed',
+    top               : 0,
+    left              : 0,
+    right             : 0,
+    bottom            : 0,
+    backgroundColor   : 'rgba(0, 0, 0, 0.5)'
+  },
+  content : {
+    position                   : 'absolute',
+    top                        : '100px',
+    left                       : '150px',
+    right                      : '150px',
+    bottom                     : '100px',
+    border                     : '1px solid #ccc',
+    background                 : '#fff',
+    overflow                   : 'auto',
+    WebkitOverflowScrolling    : 'touch',
+    borderRadius               : '4px',
+    outline                    : 'none',
+    padding                    : '20px'
+  }
+}
+
+
 class FronEndJavascript extends React.Component {
   constructor(props) {
     super(props);
@@ -76,7 +102,8 @@ class FronEndJavascript extends React.Component {
           </Col_gold>
           <Modal
             isOpen={this.state.modalIsOpen}
-            onRequestClose={this.closeModal}>
+            onRequestClose={this.closeModal}
+            style={modalStyles}>
             <button onClick={this.closeModal}>Close</button>
             {this.state.currentGist}
             <button onClick={this.closeModal}>Close</button>
