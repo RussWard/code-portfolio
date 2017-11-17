@@ -16,7 +16,6 @@ export const Nav = styled.span`
 
 export const NavLink = styled.a`
   display: inline-block;
-  color: inherit;
   margin-right: 5px;
   text-decoration: none;
   &:hover,
