@@ -20,13 +20,11 @@ export const NavLink = styled.a`
   text-decoration: none;
   &:hover,
   &:active {
-    text-decoration: underline;
-    cursor: pointer;
+    text-decoration: none;
   }
   &:visited,
   &:link {
-    color: #555;
-    text-decoration: none;
+    text-decoration: underline;
   }
 `
 
