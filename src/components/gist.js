@@ -10,15 +10,14 @@ class Gist extends React.Component {
   }
 
   componentDidMount() {
-    let gistCallback = this.props.nextGistCallback();
-    window[gistCallback] = function(gist) {
+    window[this.props.gistCallback] = function(gist) {
       this.setState({
         loading: false,
         src: gist.div
       });
       this.props.addStylesheet(gist.stylesheet);
-    }.bind(this); 
-    let url = this.props.gist.props.src + ".json?callback=" + gistCallback;
+    }.bind(this);
+    let url = this.props.gist.props.src + ".json?callback=" + this.props.gistCallback;
     let script = document.createElement('script');
     script.type = 'text/javascript';
     script.src = url;
