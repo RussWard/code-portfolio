@@ -55,6 +55,12 @@ class CategoriesContainer extends React.Component {
                   type: 'gist',
                   description: 'React container to handle mapping definitions returned from Mirriam Webster API to Card components (Utilizes Error Boundary to contain errors due to unexpected formatting variations from the API)',
                   link: "https://github.com/RussWard/karens-flashcard-app/blob/master/src/containers/webster_card.js",
+                },
+                {
+                  code: <script src="https://gist.github.com/RussWard/c6b5657b024bdcefe94da176682765d9"></script>,
+                  type: 'gist',
+                  description: 'React container to handle and submit form data via Redux Form',
+                  link: 'https://github.com/RussWard/karens-flashcard-app/blob/master/src/containers/create_flashcard.js'
                 }
               ]
             },
