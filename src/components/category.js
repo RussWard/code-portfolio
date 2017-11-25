@@ -16,10 +16,10 @@ const modalStyles = {
   },
   content : {
     position                   : 'absolute',
-    top                        : '100px',
-    left                       : '150px',
-    right                      : '150px',
-    bottom                     : '100px',
+    top                        : '15%',
+    left                       : '10%',
+    right                      : '10%',
+    bottom                     : '10%',
     border                     : '1px solid #ccc',
     background                 : '#fff',
     overflow                   : 'auto',
@@ -89,7 +89,7 @@ class Category extends React.Component {
     return (
       <div> 
         <Row>
-          <Col_3><p style={{float: 'right'}}>{this.props.category}</p> </Col_3>
+          <Col_3><p style={{float: 'right', textAlign: 'right'}}>{this.props.category}</p> </Col_3>
           <Col_gold>
             <ul>
               {this.props.examples.map((example, i) => {
